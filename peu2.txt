@@ -1,0 +1,16 @@
+<P>
+<table width="100%" border="0">  
+  <tr bgcolor="#ffffaa"> 
+    <td colspan="3" height="18"     
+    align="left" bgcolor=#ffffaa class="petit"> 
+     
+<A href="index.php?validacio=<?php echo $validacio ?>">Menu principal </a>| 
+<A href="gestor_autors.php?validacio=<?php echo $validacio ?>" >Gestor Autors</A> | 
+<A href="gestor_titols.php?validacio=<?php echo $validacio ?>" >Gestor titols</A> | 
+<A href="gestor_editorials.php?validacio=<?php echo $validacio ?>" >Gestor Editorials</A> | 
+<A href="gestor_detalls.php?validacio=<?php echo $validacio ?>" >Gestor de detalls</A> | 
+<A href="../../biblioteca.htm" >Pàgina Biblioteca</A> 
+ 
+
+  </tr>
+</table> 

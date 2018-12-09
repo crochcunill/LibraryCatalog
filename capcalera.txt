@@ -1,0 +1,72 @@
+<HTML>
+<HEAD>
+
+	<style type="text/css">
+<!--
+   
+a { text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: #ff0000;
+  }
+
+A:Hover  {
+	color: #00ff00;
+	text-decoration: underline
+
+    }
+
+
+P {
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+	}
+
+LI {
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+	}
+
+
+H1 {
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		color=#FF0000;
+	}	
+
+.petit {
+		text-decoration: bold;
+		font-size=10;
+		color=#ff0000;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+	}
+
+.normal {
+		font-size=12;
+		color=#000000;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+	}
+
+-->
+
+</style>
+<TITLE>Administració de la Biblioteca del Casal Català de Vancouver</TITLE>
+</HEAD>
+<BODY>
+
+<table width="100%">
+<tr> 
+ <td><IMG height=100 src="./pictures/noulogo.gif" width=110 align=center></td>
+ <td valign="bottom" align="left" class="Text"><H1>Casal Català de Vancouver</H1></td>
+</tr>
+</table>    
+	 
+<table width="100%" border="0">  
+  <tr bgcolor="#ffffaa"> 
+    <td colspan="3" height="18"     
+    align="left" bgcolor=#ffffaa class="petit"> 
+      <A title="Pàgina inicial" href="http://www.casalcatala.ca">Inici </A> 
+    
+    </td>     
+
+  </tr>
+</table>  
+
+
+

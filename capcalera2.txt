@@ -1,0 +1,85 @@
+<HTML>
+<HEAD>
+
+	<style type="text/css">
+<!--
+   
+a { text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: #ff0000;
+  }
+
+A:Hover  {
+	color: #00ff00;
+	text-decoration: underline;
+
+    }
+
+
+P {
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+	}
+
+LI {
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+	}
+
+
+H1 {
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		color=#FF0000;
+	}	
+
+H2 {	
+		font-size=22;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		color=#FF0000;
+	}		
+
+
+.petit {
+		text-decoration: bold;
+		font-size=10;
+		color=#ff0000;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+	}
+
+.normal {
+		font-size=12;
+		color=#000000;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+	}
+
+-->
+
+</style>
+<TITLE>Pàgina d'autorització</TITLE>
+</HEAD>
+<BODY>
+
+<table width="100%">
+<tr> 
+ <td><IMG height=100 src="./pictures/noulogo.gif" width=110 align=center></td>
+ <td valign="bottom" align="left" class="Text"><H1>Administració de la Biblioteca del Casal Català de Vancouver</H1></td>
+</tr>
+</table>    
+	 
+<table width="100%" border="0">  
+  <tr bgcolor="#ffffaa"> 
+    <td colspan="3" height="18"     
+    align="left" bgcolor=#ffffaa class="petit"> 
+     
+<A href="index.php?validacio=<?php echo $validacio ?>">Menu principal </a>| 
+<A href="gestor_autors.php?validacio=<?php echo $validacio ?>" >Gestor Autors</A> | 
+<A href="gestor_titols.php?validacio=<?php echo $validacio ?>" >Gestor titols</A> | 
+<A href="gestor_editorials.php?validacio=<?php echo $validacio ?>" >Gestor Editorials</A> | 
+<A href="gestor_detalls.php?validacio=<?php echo $validacio ?>" >Gestor de detalls</A> | 
+<A href="../../biblioteca.htm" >Pàgina Biblioteca</A> 
+ 
+ <!--
+     |  <A title="Pàgina Casal" href="http://www.ashlu.com/casal" >Pàgina Casal</A>
+  -->
+    </td>     
+
+  </tr>
+</table> 

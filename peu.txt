@@ -1,0 +1,12 @@
+<table width="100%" border="0">  
+  <tr bgcolor="#ffffaa"> 
+    <td colspan="3" height="18"     
+    align="left" bgcolor=#ffffaa class="petit"> 
+      <A title="Pàgina inicial" href="http://www.casalcatala.ca">Inici </A> 
+    
+    </td>     
+
+  </tr>
+</table> 
+</BODY>
+</HTML>

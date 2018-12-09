@@ -1,0 +1,7 @@
+# robots.txt for www.casalcatala.ca
+
+
+# Stops things from running cgi's - and user cgis
+User-agent: *
+Disallow: /manual/
+

@@ -1,0 +1,220 @@
+<HTML>
+<HEAD>
+
+	<style type="text/css">
+<!--
+   
+a { text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: #ff0000;
+  }
+
+A:Hover  {
+	color: #00ff00;
+	text-decoration: underline
+
+    }
+
+
+P {
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size=14;
+	}
+
+LI {
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+	}
+
+
+H1 {
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		color=#FF0000;
+	}	
+	
+H2 {	
+		font-size=22;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		color=#FF0000;
+	}		
+
+.petit {
+		text-decoration: bold;
+		font-size=10;
+		color=#ff0000;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+	}
+
+.normal {
+		font-size=12;
+		color=#000000;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+	}
+	
+.normal_table{
+		font-size=15;
+		color=#000000;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+	}
+-->
+
+</style>
+<TITLE>Acces als recursos de la Biblioteca del Casal Català de Vancouver</TITLE>
+</HEAD>
+<BODY>
+
+<table width="100%">
+<tr> 
+ <td><IMG height=100 src="./pictures/noulogo.gif" width=110 align=center></td>
+ <td valign="bottom" align="left" class="Text"><H1>Biblioteca del Casal</H1></td>
+</tr>
+</table>    
+	 
+<table width="100%" border="0">  
+  <tr bgcolor="#ffffaa"> 
+    <td colspan="3" height="18"     
+    align="left" bgcolor=#ffffaa class="petit"> 
+      <A title="Pàgina inicial" href="http://www.casalcatala.ca">Inici </A> 
+    
+    </td>     
+
+  </tr>
+</table> 
+ 
+<table bgcolor="white" width="100%" border="2" cellspacing="2" cellpadding="2" align="center" bordercolor="white">
+
+  <tr> 
+	<td  width="10%"  bgcolor="#ffffaa" class="petit" valign=top> 
+      
+		<P><center>
+		<A title="Mostrar tots els titols" href="http://www.casalcatala.ca/CasalBiblioteca/public/tots_titols.php?pagina_actual=1" >		
+		<IMG src="./pictures/icon_titol.gif" align=middle border=0>
+		<BR>Tots els
+		<BR> titols</A>
+		</center>
+		</P>
+		
+		<P><center>
+		<A title="Mostrar tots/es els/les autor/es" href="http://www.casalcatala.ca/CasalBiblioteca/public/tots_autors.php?pagina_actual=1" >		
+		<IMG src="./pictures/icon_autor.gif" align=middle border=0>
+		<BR>Tots/es els/les 
+		<BR>autor/es</A>
+		</center>
+		</P>
+      <!--
+		<P><center>
+		<A title="Definicions" href="http://www.casalcatala.ca/CasalBiblioteca/public/tots_autors.php" ></A>		
+		<IMG src="./pictures/icon_definicions.gif" align=middle border=0>
+		<BR>Definicions
+		</center>
+		</P>
+		
+	     <P><center>
+		<A title="Préstec de llibres" href="http://www.casalcatala.ca/CasalBiblioteca/public/tots_autors.php" ></A>		
+		<IMG src="./pictures/icon_prestec.gif" align=middle border=0>
+		<BR>Préstec de llibres
+		</center>
+		</P>      
+
+     -->      
+    </td>    
+
+	<td  valign=top class="normal"> 
+ 				
+
+		
+		
+		
+		<table class="normal_table">
+			<TR bgcolor=#dddddd>
+				<TD>					
+					<P>Per suggerir-nos idees, enviar-nos comentaris o per demanar un llibre en prestec, si us
+					plau envieu un correu a <A HREF="mailto:biblioteca@casalcatala.ca">biblioteca@casalcatala.ca</A>
+				</TD>
+			</tr>
+		</table>
+		<P>
+		<table class="normal_table">
+			<TR>
+				<TD bgcolor=#ffffdd  width="30%">
+					<P>Benvingut/da a pàgina de la Biblioteca del Casal.
+			
+					<P>Podeu cercar el material de la Biblioteca  utilitzant el 
+					nom o cognoms de l'autor/a (o fragments del nom o cognom) o el títol (o un fragment del títol).
+					
+					<P>També podeu cercar per paraules clau. Aquesta cerca analitza el títol i la 
+					sinopsis per trobar la paraula o paraules (o fragments) que heu entrat.
+			
+					<P>La cerca per medis (llibres, DVDs, CDs, casetes...), categories
+					(Assaig, novel.la...) i idiomes (Anglés, Català, Francés...) us retornarà les
+					entrades que compleixen les condicions que heu entrat.
+					
+					<P>El botó <I>Definicions</I> us explicarà el que entenem per <I>Assaig</I>, <I>Novel.la</I> ...
+					 
+					<P>El botó <I>Préstec de llibres</I> us explicarà el que heu de fer si voleu
+					demanar en préstec un títol de la Biblioteca.		
+				</TD>
+			</TR>	
+		</table>		
+	
+		
+	</TD>
+		
+				
+			
+	<TD bgcolor=#ffffaa width="25%" valign=top align=left>
+	<h2>Cercar per...</h2>
+	
+		<DIV class="normal">Caràcters en el nom/cognom de l'autor/a:</DIV>
+
+		<DIV class="petit">Per exemple <B>era</B> per trobar <I>Carme Ri<B>era</B></I></DIV> 				
+	
+		<FORM action="http://www.casalcatala.ca/CasalBiblioteca/public/autor_p.php" method=post id=form1 name=form1>
+			<INPUT id=text1 name="autor">&nbsp;	
+			<INPUT type="hidden" name="pagina_actual" value="1" >	
+			<INPUt alt="Cercar" type=IMAGE src="./pictures/icon_ok.gif" width=35 height=21 id=IMAGE1 name=IMAGE1>	
+		</FORM>	
+	
+		<HR>
+			
+		<DIV  class="normal">Caràcters en el títol:</DIV >
+		<DIV class="petit">Per exemple <B>ber</B> per trobar <I>Cap el cel o<B>ber</B>t</I></DIV> 				
+		<FORM action="http://www.casalcatala.ca/CasalBiblioteca/public/titol_p.php" method=post id=form1 name=form1>
+			<INPUT id=text1 name="titol">
+			<INPUT type="hidden" name="pagina_actual" value="1" >
+			<INPUT alt="Cercar" type=IMAGE src="./pictures/icon_ok.gif" width=35 height=21>	
+			
+		</FORM>			
+		
+		<HR>
+
+		<DIV  class="normal">Cercar per paraules clau.</DIV >
+		<DIV class="petit">Per exemple <B>Salim</B> us retornara <I>Els narradors de la nit</I> perquè 
+		a la sinopsis hi apareix el nom <I>Salim<I></DIV> 				
+		
+
+		
+		<FORM action="http://www.casalcatala.ca/CasalBiblioteca/public/paraules_clau_p.php" method=post id=form1 name=form1>
+			<INPUT id=text1 name="paraules_clau" >
+			<INPUT type="hidden" name="pagina_actual" value="1" >		
+			<INPUT alt="Cercar" type=IMAGE src="./pictures/icon_ok.gif" width=35 height=21 id=IMAGE2 name=IMAGE2>	
+			
+		</FORM>
+	
+	</td>
+  </tr>
+</table>				
+
+		
+		
+<table width="100%" border="0">  
+  <tr bgcolor="#ffffaa"> 
+    <td colspan="3" height="18"     
+    align="left" bgcolor=#ffffaa class="petit"> 
+      <A title="Pàgina inicial" href="http://www.casalcatala.ca">Inici </A> 
+    
+    </td>     
+
+  </tr>
+</table>
+</BODY>
+</HTML>
