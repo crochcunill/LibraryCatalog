@@ -9,7 +9,7 @@ I want to recognize the finacial support given to this project by the Generalita
 their support to the Casal Català de Vancouver- Catalan Association of Vancouver
 
 
-##Structure
+## Structure
 The [public] folder contains the files that user will access to find books.
 
 The files under the root directory are the files user by the administrator. They allow
@@ -19,7 +19,7 @@ The admnimistrator credentials are stored in the database. At this moment there 
 edit these credentials. 
 
 
-##Usage
+## Usage
 Copy the files into the location you want to use them. 
 Install the DB on MySQL by executing BiblioDBStructure.sql. The script will create all the tables for 
 the database names casalcat_casalbiblioteca
