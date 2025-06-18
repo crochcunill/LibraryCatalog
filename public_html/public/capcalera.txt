@@ -1,0 +1,93 @@
+<HTML>
+<HEAD>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+	<style type="text/css">
+<!--
+   
+a { text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: #ff0000;
+  }
+
+A:Hover  {
+	color: #00ff00;
+	text-decoration: underline
+
+    }
+
+
+P {
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+	}
+
+LI {
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+	}
+
+
+H1 {
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		color=#FF0000;
+	}
+H2 {	
+		font-size=22;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		color=#FF0000;
+	}		
+
+.petit {
+		text-decoration: bold;
+		font-size=10;
+		color=#ff0000;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+	}
+
+.normal {
+		text-decoration: bold;
+		font-size=12;
+		color=#000000;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+	}
+	
+.normal_table{
+		
+		font-size=15;
+		color=#000000;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+	}
+
+
+.hidden{
+		display:none;
+	}
+
+
+-->
+
+</style>
+<TITLE>Accès als recursos de la Biblioteca del Casal Català de Vancouver</TITLE>
+</HEAD>
+<BODY>
+
+<table width="100%">
+<tr> 
+ <td><IMG height=100 src="../pictures/noulogo.gif" width=110 align=center></td>
+ <td valign="bottom" align="left" class="Text"><H1>Casal Catala de Vancouver</H1></td>
+</tr>
+</table>    
+	 
+<table width="100%" border="0">  
+  <tr bgcolor="#ffffaa"> 
+    <td colspan="3" height="18"     
+    align="left" bgcolor=#ffffaa class="petit"> 
+      <A title="Pagina inicial" href="http://www.casalcatala.ca">Inici </A> | 
+      <A title="Biblioteca del Casal" href="./biblioteca.htm" >Biblioteca</A>
+    
+    </td>     
+
+  </tr>
+</table> 
+
+
+
