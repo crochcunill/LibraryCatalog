@@ -35,10 +35,14 @@
 	utilitzant el nom o el cognom de l'autor/a. Per exemple si introduiu <b><i>bert</i></b> en el títol 
 	trobareu <i>Cap al cel o<b>bert</B></I>
 	
-	<FORM action="cercar_titols.php" method=POST id=form1 name=form1>		<P>Títol:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <INPUT type="text" id=text1 name="titol_nom" size=65>
+	<FORM action="cercar_titols.php" method=POST id=form1 name=form1>		
+		<P>Títol:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+		<INPUT type="text" id=text1 name="titol_nom" size=65>
 		
-		<P>Nom:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <INPUT type="text" id=text1 name="autor_nom">		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		Cognoms: <INPUT type="text" name="autor_cognoms">
+		<P>Nom:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+		<INPUT type="text" id=text1 name="autor_nom">		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		Cognoms: 
+		<INPUT type="text" name="autor_cognoms">
 		<INPUT type="hidden" name="validacio" value="<?php echo $validacio ?>" >
 		<INPUT type="hidden" name="pagina_actual" value="1" >
 		<P><INPUT type="submit" value="Entrar" id=submit1 name=submit1>

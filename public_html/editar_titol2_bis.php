@@ -27,7 +27,7 @@
 
 //	echo "<P>====>".$sentence;
 	
-//		$correct=ereg("[^0-9A-Za-z_]", $sentence,$myarray); //es a dir, si no son lletres i/o numeros, aixo es cert
+//		$correct=preg_match("[^0-9A-Za-z_]", $sentence,$myarray); //es a dir, si no son lletres i/o numeros, aixo es cert
 	
 	
 //	echo "<P>====>".$correct;

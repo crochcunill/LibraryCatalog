@@ -58,7 +58,7 @@ function checklenght($myvalue){
 
 function isnumber($myvalue){
 					
-			$correct=ereg("[^0-9]", $myvalue); 
+			$correct=preg_match("[^0-9]", $myvalue); 
 			
 			if ($correct){//si aixo es veritat vol dir que hi han caracter no numerics
 				return "false";}

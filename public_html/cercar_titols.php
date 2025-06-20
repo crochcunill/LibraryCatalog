@@ -1,10 +1,11 @@
 <?php
 	session_start();
 
-//	//$validacio=$_POST['validacio'];
-//	//$autor_nom=$_POST['autor_nom'];
-//	//$autor_cognoms=$_POST['autor_cognoms'];
-
+	$validacio=$_POST['validacio'];
+	$autor_nom=$_POST['autor_nom'];
+	$autor_cognoms=$_POST['autor_cognoms'];
+	$titol_nom=$_POST['titol_nom'];
+	$pagina_actual=$_POST['pagina_actual'];
 
 	//******** FUNCIONS***********
 	include("funcions_entrada.php");
@@ -24,48 +25,59 @@
 		include("capcalera2.txt");
 
 
-	if (checkvalues($autor_nom)=="false" || checkvalues($autor_cognoms)=="false" || checkvalues($titol_nom)=="false") {
-		echo "<P>Hi han caracters no valids en la combinacio <I>nom/cognoms</I>. Intenteu de nou";				$PerformQuery=0;							}
-	elseif (checklenght($autor_nom)=="false" && checklenght($autor_cognoms)=="false" && checklenght($titol_nom)=="false") {		echo "<P>Heu d'entrar alguna cosa en el titol, o en el nom de l'autor o en el cognom de l'autor. Intenteu de nou";				$PerformQuery=0;							}
-//***********************************		else{
-		$begin_query="Select titol_ID,titol_nom,autor_nom,autor_cognoms from titols,autors where";
-		$end_query=" AND titol_autor_ID=autor_ID";					
-		$PerformQuery=1;//Sabem que hi ha d'haver algun caracter en algun lloc!
-				if ($autor_nom==""){			echo "mevaquery= ".$PerformQuery;
-			if ($autor_cognoms==""){				$mevaquery=$begin_query." titol_nom like '%".trim($titol_nom)."%'". $end_query;			
-							}
-			else{
-				$mevaquery=$begin_query." titol_nom like '%".trim($titol_nom)."%' AND autor_cognom like '%".trim($autor_cognom)."%'". $end_query;	
-				}							}			else{
-			if ($autor_cognoms==""){				if ($titol_nom=""){					$mevaquery=$begin_query." autor_nom like '%".trim($autor_nom)."%'".$end_query;					}				else{	
-					$mevaquery=$begin_query." autor_nom like '%".trim($autor_nom)."%' AND titol_nom like '%".trim($titol_nom)."%' ".$end_query;
-					}
-				}											else{				if ($titol_nom=""){					$mevaquery=$begin_query." autor_nom like '%".trim($autor_nom)."%' AND autor_cognom like '%".trim($autor_cognom)."%' ".$end_query;					}				else{	
-					$mevaquery=$begin_query." autor_nom like '%".trim($autor_nom)."%' AND titol_nom like '%".trim($titol_nom)."%' AND autor_cognom like '%".trim($autor_cognom)."%'".$end_query;
-					}				}			
-			}			
+	if (checkvalues($autor_nom)=="false" || checkvalues($autor_cognoms)=="false" || checkvalues($titol_nom)=="false"){
+		echo "<P>Hi han caracters no valids en la combinacio <I>nom/cognoms/títol</I>. Intenteu de nou";
+		$PerformQuery=0;							
+		}
+	elseif (checklenght($autor_nom)=="false" && checklenght($autor_cognoms)=="false" && checklenght($titol_nom)=="false"){
+		echo "<P>Heu d'entrar lletres del títol, o en el nom de l'autor o en el cognom de l'autor. Intenteu de nou";				
+		$PerformQuery=0;							
+		}
+
+	$begin_query="Select titol_ID,titol_nom,autor_nom,autor_cognoms from titols,autors where";
+	$end_query=" AND titol_autor_ID=autor_ID";					
+	$PerformQuery=1;//Sabem que hi ha d'haver algun caracter en algun lloc!
+	if ($autor_nom==""){
+	
+		if ($autor_cognoms==""){
+			$mevaquery=$begin_query." titol_nom like '%".trim($titol_nom)."%'". $end_query;			
+			}
+		else{
+			$mevaquery=$begin_query." titol_nom like '%".trim($titol_nom)."%' AND autor_cognom like '%".trim($autor_cognom)."%'". $end_query;	
+			}
+		}
+	else{
+		if ($autor_cognoms==""){
+			if ($titol_nom=""){
+				$mevaquery=$begin_query." autor_nom like '%".trim($autor_nom)."%'".$end_query;					}				else{	
+				$mevaquery=$begin_query." autor_nom like '%".trim($autor_nom)."%' AND titol_nom like '%".trim($titol_nom)."%' ".$end_query;
+				}
+			}
+		else{				
+			if ($titol_nom=""){
+				$mevaquery=$begin_query." autor_nom like '%".trim($autor_nom)."%' AND autor_cognom like '%".trim($autor_cognom)."%' ".$end_query;					}				else{	
+				$mevaquery=$begin_query." autor_nom like '%".trim($autor_nom)."%' AND titol_nom like '%".trim($titol_nom)."%' AND autor_cognom like '%".trim($autor_cognom)."%'".$end_query;
+				}	
+			}						
 		}//end of else: if (checkvalues($autor_nom)
-					//echo "<B>".$mevaquery."</B>";	//***********************************									
 							
 	if ($PerformQuery!=0){
-	
-	
 		include("common_variables.php");	
 		$my_query=$mevaquery;							
-		$resultats=mysqli_query($link_ID,$my_query, $link_ID);			
+		$resultats=mysqli_query($link_ID,$my_query);			
 		$num_entrades=mysqli_num_rows($resultats);
 		$numero_pagines=ceil($num_entrades/$tamany_pagina);				
 ?>		
 	<p>Hi han <B><?php echo $num_entrades?></B> autors/es a la base de dades que 
-	 contenen <B>"<?php echo $titol_nom ?>"</B> en el t�tol, <B>"<?php echo $autor_nom ?>"</B> en el nom i <B>"<?php echo $autor_cognoms ?>"</B> en el cognom . Els trobareu
-	ordenats pel seu <B>titol</B> i distribuits en <B><?php echo $numero_pagines?></B> p�gines. La 
-	p�gina actual �s la <B><?php echo $pagina_actual ?> </B>. 
+	 contenen <B>"<?php echo $titol_nom ?>"</B> en el títol, <B>"<?php echo $autor_nom ?>"</B> en el nom i <B>"<?php echo $autor_cognoms ?>"</B> en el cognom . Els trobareu
+	ordenats pel seu <B>titol</B> i distribuits en <B><?php echo $numero_pagines?></B> pàgines. La 
+	pàgina actual és la <B><?php echo $pagina_actual ?> </B>. 
 
 	
 	<center class="normal">
 	
 	
-<P>P�gina	
+<P>Pàgina	
 <?php	
 
 	for ($i=1;$i<=$numero_pagines;$i++){
@@ -85,8 +97,11 @@
 			}
 		}	
 
-	include("common_variables.php");		$limit_query=" LIMIT ". ($pagina_actual-1) * $tamany_pagina . ", $tamany_pagina";
-	$mevaquery=$mevaquery.$limit_query;	//	echo "<P>Meva Query ".$mevaquery;
+	include("common_variables.php");		
+	
+	if($pagina_actual==0){$pagina_actual=1;}
+	$limit_query=" LIMIT ". ($pagina_actual-1) * $tamany_pagina . ", $tamany_pagina";
+	$mevaquery=$mevaquery.$limit_query;	
 
 ?>
 	
@@ -100,7 +115,7 @@
 		
 <?php
 											
-	$resultats=mysqli_query($link_ID,$mevaquery, $link_ID);
+	$resultats=mysqli_query($link_ID,$mevaquery);
 	$color_flag=1;	
 	while ($els_resultats=mysqli_fetch_row($resultats)){	
 						
@@ -137,12 +152,11 @@
 			
 		} //end while	
 		
-		
+
 	$mysqli_error=mysqli_error($link_ID);
-	$MYSQL_ERROR=mysql_error($link_ID);
 				
-	if (!empty($MYSQL_ERROR)){
-			echo "2===> $mysqli_error:    $MYSQL_ERROR  <BR>";
+	if (!empty($mysqli_error)){
+			echo "===> $mysqli_error<BR>";
 		}
 	
 	echo "</TABLE>";

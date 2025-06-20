@@ -10,10 +10,10 @@ $MyCase=$_GET['error'];
 switch($MyCase){
 
 	case 1:
-		echo "Cal accedir a aquesta p‡gina utilitzant la <a href=\"index.php\">p‡gina inicial</a>";
+		echo "Cal accedir a aquesta p√†gina utilitzant la <a href=\"index.php\">p√†gina inicial</a>";
 		break;
 	default:
-		echo "Heu fet un error. Torneu a la <a href=\"index.php\">p‡gina inicial</a>";
+		echo "Heu fet un error. Torneu a la <a href=\"index.php\">p√†gina inicial</a>";
 
 } //end of switch
 

@@ -23,7 +23,7 @@ function checkvalues($myvalue){
 		//		$myvalue2=str_replace($pattern,"",$myvalue2);
 		//	}
 			
-		$correct=ereg("[^0-9A-Za-z_]", $sentence,$myarray); //es a dir, si no son lletres i/o numeros, aixo es cert
+		$correct=preg_match("[^0-9A-Za-z_]", $sentence,$myarray); //es a dir, si no son lletres i/o numeros, aixo es cert
 	
 		if ($correct)
 				{
@@ -51,7 +51,7 @@ function checklenght($myvalue){
 
 function isnumber($myvalue){
 					
-			$correct=ereg("[^0-9]", $myvalue); 
+			$correct=preg_match("[^0-9]", $myvalue); 
 			
 			if ($correct){//si aixo es veritat vol dir que hi han caracter no numerics
 				return "false";}

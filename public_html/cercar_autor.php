@@ -130,10 +130,9 @@
 		
 		
 	$mysqli_error=mysqli_error($link_ID);
-	$MYSQL_ERROR=mysql_error($link_ID);
 				
-	if (!empty($MYSQL_ERROR)){
-			echo "2===> $mysqli_error:    $MYSQL_ERROR  <BR>";
+	if (!empty($mysqli_error)){
+			echo "===> $mysqli_error<BR>";
 		}
 	
 	echo "</TABLE>";
