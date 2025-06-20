@@ -57,7 +57,8 @@ else{
 		}			
 }//end of else: if (checkvalues($editorial_nom)
 						
-						
+	
+
 if ($PerformQuery!=0){	
 	include("common_variables.php");				
 ?>		
