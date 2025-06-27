@@ -82,7 +82,7 @@ H2 {
     <td colspan="3" height="18"     
     align="left" bgcolor=#ffffaa class="petit"> 
       <A title="Pagina inicial" href="http://www.casalcatala.ca">Inici </A> | 
-      <A title="Biblioteca del Casal" href="./biblioteca.htm" >Biblioteca</A>
+      <A title="Biblioteca del Casal" href="../biblioteca.htm" >Biblioteca</A>
     
     </td>     
 
