@@ -1,8 +1,4 @@
 <?php
-//$host = '10.169.0.50';
-//$user = 'casalcat_biblio';
-//$pass = 'Hola2006';
-
 $host = 'mysql';
 $user = 'root';
 $pass = 'rootpassword';
